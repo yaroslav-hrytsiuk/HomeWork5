@@ -12,9 +12,9 @@ function createArray(some){
     }
     return numArr;
 }
-const some = 100;
+const some = 50;
 const newArray = createArray(some);
-console.log(newArray);
+console.log('Our created random array - ', newArray);
 
 
 function uniNum (arr) {
@@ -26,8 +26,8 @@ function uniNum (arr) {
     }
     return result;
 }
-console.log(uniNum(newArray));
+console.log('All unique elements - ', uniNum(newArray));
 
 let unique = newArray.filter((item, i, ar) => ar.indexOf(item) === i); //Знайшов два методи для отримання унікальних елементів
-console.log(unique);
+console.log('All unique elements - ', unique);
 
